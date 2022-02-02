@@ -1,0 +1,25 @@
+:root {
+    --main-color: red;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    overflow-x: hidden;
+    height: 100vh;
+    user-select: none;
+    background-color: var(--main-color);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  @import './globals/global-mixins';
+  @import './globals/global-classes';
+  @import './main/navbar';
