@@ -1,0 +1,240 @@
+.skills {
+
+    width: 100%;
+    margin-top: 400px;
+    svg:nth-child(1) { transform: translateY(5px); }
+
+    .skills__ctn {
+
+        background-color: var(--main-color); 
+        padding: 20px 0;
+
+        .skills-slider {
+
+            .swiper-container {
+
+                @include width-and-height( 100%, 300px ); 
+                position: relative;
+            
+                .swiper-wrapper {
+            
+                    .swiper-slide { 
+            
+                        @include display-flex(); 
+                    
+                        .swiper-img {
+                            height: 130px;
+                            object-fit: cover;
+                        }
+                        
+                    }
+            
+                }
+            
+                .button-next,
+                .button-prev {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 100;
+                    outline: none;
+                
+                    i {
+                        font-size: 35px;
+                        cursor: pointer;
+                    }
+                }
+                
+                .button-next { right: 20px;}
+                .button-prev { left: 20px; }
+                
+            }
+            
+        }
+
+        .skills-cards {
+
+            margin-top: 60px;
+
+            .skills-card {
+
+                .skills-card__shadow {
+
+                    @include position-top-left( absolute, 10px, 10px );
+                    @include width-and-height( calc( 100% - 20px ), calc( 100% - 20px ) );
+                    @include display-flex();
+                
+                    background: rgba( 255, 255, 255, .2 );
+                    border-radius: 10px;
+                    border: 1px solid rgba( 255, 255, 255, .1 );
+                    backdrop-filter: blur( 7px );
+                    box-shadow: 5px 5px 30px rgba( 0, 0, 0, .1 );
+                
+                    z-index: 1;
+                    overflow: hidden;
+                
+                    transition: 
+                        width .5s ease-in-out, height .5s ease-in-out, left .5s ease-in-out, top .5s ease-in-out;
+
+                    .skills-card__logo {
+                        width: 90%;
+                        object-fit: cover;
+                        transition: height .5s ease-in-out;
+                    }
+                        
+                }
+
+                .skills-card__title {
+                    position: relative;
+                    text-transform: uppercase;
+                    color: red;
+                    margin-bottom: 35px;
+                
+                    &:after {
+                        display: block;
+                        position: absolute;
+                        content: '';
+                        left: 50%;
+                        transform: translateX(-50%);
+                        bottom: -20px;
+                        @include width-and-height( 70%, 2px );
+                        background: #000;
+                    }
+                }
+                
+                .skills-card__description { 
+                    color: var(--grey-color); 
+                }
+
+                &:hover {
+
+                    .skills-card__shadow {
+                        $size: 100px;
+                        @include width-and-height( $size, $size );
+                        left: calc( 50% - 50px ); // $size / 2.
+                        top: -($size / 2);
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}
+
+
+// MEDIA QUERIES.
+@media( min-width: 330px ) {
+    .skills {
+        .skills__ctn .skills-cards .skills-card .skills-card__title { font-size: 20px; } 
+    }
+}
+
+@media( min-width: 400px ) { 
+    .skills {
+        .skills__ctn .skills-cards .skills-card .skills-card__shadow .skills-card__logo { width: 70%; }
+    }
+}
+
+@media( min-width: 450px ) { 
+    .skills {
+        .skills__ctn .skills-slider .swiper-container .swiper-wrapper .swiper-slide .swiper-img { height: 180px; } 
+    }
+}
+
+@media( min-width: 500px ) {
+
+    .skills {
+        .skills__ctn .skills-slider .swiper-container {
+            .button-next { right: 10px;}
+            .button-prev { left: 10px; }
+        }
+    }
+
+}
+
+@media( min-width: 550px ) { 
+    .skills {
+        .skills__ctn .skills-cards .skills-card .skills-card__shadow .skills-card__logo { width: 50%; }
+    }
+}
+
+@media( min-width: 660px ) {
+
+    .skills {
+        .skills__ctn .skills-slider .swiper-container {
+            .button-next,
+            .button-prev {
+                i { font-size: 55px; }
+            }
+        }
+    }
+
+}
+
+@media( min-width: 717px ) { 
+    .skills {
+        .skills__ctn .skills-cards .skills-card .skills-card__shadow .skills-card__logo { width: 90%; }
+    }
+}
+
+@media( min-width: 769px ) {
+
+    .skills .skills__ctn {
+
+        .skills-slider {
+            .swiper-container { height: 400px; }
+        }
+
+        .skills-cards {
+
+            .skills-card {
+
+                &:hover .skills-card__shadow {
+                    $size: 140px;
+                    @include width-and-height( $size, $size );
+                    left: calc( 50% - 70px ); // $size / 2.
+                    top: -($size / 2);
+                }
+
+                .skills-card__title { font-size: 25px; }
+                .skills-card__description { font-size: 18px; }
+                
+            }
+            
+        }
+        
+    }
+    
+}
+
+@media( min-width: 900px )  {
+    .skills {
+        .skills__ctn .skills-slider .swiper-container .swiper-wrapper .swiper-slide .swiper-img { height: 220px; } 
+    }
+}
+
+@media( min-width: 1100px ) { 
+    .skills {
+        .skills__ctn .skills-slider .swiper-container .swiper-wrapper .swiper-slide .swiper-img { height: 260px; } 
+    }
+}
+
+@media( min-width: 1200px ) {
+
+    .skills {
+        .skills__ctn .skills-slider .swiper-container {
+
+            height: 500px;
+            
+            .button-next,
+            .button-prev {
+                display: none;
+            }
+        }
+    }
+    
+}

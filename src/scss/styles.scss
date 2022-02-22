@@ -1,25 +1,28 @@
-:root {
-    --main-color: red;
-  }
-  
-  * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    overflow-x: hidden;
-    height: 100vh;
-    user-select: none;
-    background-color: var(--main-color);
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-  
-  @import './globals/global-mixins';
-  @import './globals/global-classes';
-  @import './main/navbar';
+@import './config/base';
+@import './config/mixins';
+@import './config/classes';
+
+@import './main/navbar';
+@import './main/circle';
+@import './main/about-me';
+@import './main/my-projects';
+@import './main/skills';
+@import './main/my-services';
+@import './main/footer';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

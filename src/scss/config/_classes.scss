@@ -1,0 +1,186 @@
+.title {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    &--about-me { margin-bottom: 50px; }
+    &--competencies { margin-bottom: 70px; }
+    &--contact { padding-top: 70px; }
+}
+
+.description {
+    width: 80%;
+    text-align: center;
+    font-size: 16px;
+
+    &--projects,
+    &--services,
+    &--contact { 
+        margin: 30px auto; 
+    }
+
+    &--skills { 
+        margin: 30px auto 0 auto; 
+    }
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: color .3s ease, background-color .3s ease;
+    border-radius: 30px;
+    font-weight: 900;
+
+    &--about-me {
+        margin-top: 30px;
+        background-color: #fff;
+        color: #000;
+
+        &:hover {
+            background-color: var(--about-me__name-color);
+            color: #fff;
+        }
+    }
+
+    &--projects {
+        font-size: 12px;
+        &:hover {  background-color: #000 !important;  }
+    }
+
+    &--services {
+        background-color: var( --services-color );
+        margin-bottom: 30px;
+
+        &:hover { 
+            background-color: #fff; 
+            color: #000;
+        }
+    }
+}
+
+.roundButton {
+    @include width-and-height( 45px, 45px );
+    @include display-flex( center, center, row );
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+
+    &--bottom {
+        position: fixed;
+        bottom: 120%;
+        right: 50%;
+        transform: translateX( 50% );
+        background-color: red;
+        z-index: var( --roundButton-bottom-zIndex );
+        text-decoration: none;
+        transition: right ease .3s, bottom ease .3s, transform ease .3s, background-color .3s ease;
+
+        i {
+            color: #fff;
+            font-size: 25px;
+            transform: translateY(-2px);
+            transition: color .3s ease;
+        }
+
+        &:hover {
+            background-color: #ae0000;
+        }
+    }
+}
+
+.show-button {
+    right: 20px;
+    bottom: 20px;
+    transform: translateX( 0 );
+}
+
+
+// CARDS AND GRID
+.grid {
+    margin: 0 30px;
+    display: grid;
+    row-gap: 80px;
+    column-gap: 40px;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    background-color: #fff;
+    @include display-flex( center, center, column );
+    position: relative;
+    padding: 70px 30px;
+    color: #000;
+    text-align: center;
+    border-radius: 10px;
+
+    &--services {
+        padding: 30px;
+        @include display-flex( center, space-evenly, column);
+    }
+}
+
+// MEDIA QUERIES
+@media( min-width: 350px ) {
+    .card { &--services { padding: 60px 30px; } }
+}
+
+@media( min-width: 380px ) {
+    .grid { grid-template-columns: repeat( auto-fit, minmax( 300px, 1fr ) ); }
+}
+
+@media( min-width: 500px ) {
+    .description { font-size: 18px; }
+}
+
+@media( min-width: 769px ) {
+    .title { 
+        font-size: 50px; 
+        &--about-me { 
+            margin-bottom: 30px; 
+            padding: 0;
+        }
+
+        &--competencies { margin-bottom: 100px; }
+    }
+
+    .button { &--projects { font-size: 14px; } }
+    .grid { row-gap: 100px; }
+    .card { padding: 100px 30px; }
+    .description { font-size: 20px; }
+}
+
+@media( min-width: 1100px ) {
+    .button { &--projects { padding: 20px 30px; } }
+
+    .roundButton {
+        @include width-and-height( 55px, 55px );
+        &--bottom { i { font-size: 30px; } }
+    }
+
+    .show-button { right: 45px; }
+}
+
+@media( min-width: 1200px ) {
+    .title { font-size: 80px; }
+
+    .button {
+        font-size: 16px;
+        padding: 20px 40px;
+    }
+
+    .grid { grid-template-columns: repeat( 4, 1fr ); }
+    .card { &--services { padding: 90px 30px; } }
+
+    .description {
+        font-size: 25px; 
+        width: 60%;
+        &--projects { margin-bottom: 60px; }
+        &--services { margin-bottom: 50px; }
+    }
+}

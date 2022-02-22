@@ -1,0 +1,66 @@
+.my-services {
+
+    margin-top: 400px;
+    width: 100%;
+    background: #a44a6f;
+    clip-path: polygon(100% 0, 100% 100%, 66% 98%, 0 100%, 0 2%);
+    padding: 150px 0;
+
+    .my-services__text {
+        @include display-flex( center, center, column );
+        margin-bottom: 20px;
+    }
+ 
+    .my-services__grid {
+
+        gap: 30px;
+
+        .services-card {
+
+            .my-services__img {
+                width: 160px;
+                object-fit: cover;
+            }
+            
+            .services-card__title {
+                margin: 20px 0;
+                text-transform: uppercase;
+                color: var( --services-color );
+            }
+            
+            .services-card__description {
+                color: grey;
+            }
+            
+        }
+        
+    }
+    
+}
+
+// MEDIA QUERIES
+@media( min-width: 350px ) {
+
+    .my-services {
+        .my-services__grid .services-card .services-card__title { font-size: 20px; } 
+    }
+    
+}
+
+@media( min-width: 769px ) {
+
+    .my-services {
+        .my-services__grid .services-card {
+            .my-services__img { width: 230px; }
+            .services-card__title { font-size: 22px; }
+            .services-card__description { font-size: 17px; }
+        }
+    }
+    
+}
+
+@media( min-width: 900px ) {
+    .my-services {
+        clip-path: polygon(100% 0, 100% 100%, 66% 96%, 0 100%, 0 5%);
+    }
+}

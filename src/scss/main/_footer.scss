@@ -1,0 +1,197 @@
+.footer {
+
+    margin-top: 400px;
+    background: var(--main-color);
+    clip-path: polygon(0 0, 100% 6%, 100% 100%, 0% 100%);
+
+    .contact__subtitle {
+        text-align: center;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+
+    .social-media {
+
+        margin-top: 100px;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    
+        .social-media__link {
+            text-decoration: none;
+            border: 1px solid #fff;
+            color: #fff;
+            @include width-and-height( 50px, 50px );
+            @include display-flex();
+            border-radius: 50%;
+            padding: 20px;
+            margin-right: 20px;
+            transition: background-color .3s, color .3s;
+            font-size: 20px;
+        
+            &:hover {
+                background-color: #fff;
+                color: var(--main-color);
+            }
+        }
+        
+    }
+
+    .copyright {
+
+        text-align: center;
+        margin-top: 40px;
+        padding: 0 20px 20px 20px;
+        text-transform: uppercase;
+
+        .year {
+            margin-left: 2.5px;
+        }
+        
+    }
+    
+    .contact-form {
+
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
+        
+        .contact-form__input {
+
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            outline: none;
+            background: transparent;
+            border: 1px solid #fff;
+            padding: 20px 15px;
+            color: #fff;
+            font-size: 15px;
+            &::placeholder { color: #fff; }
+
+            &.textarea {
+                resize: none;
+                @include width-and-height( 100%, 200px );
+                margin: 0;
+                font-family: 'Asap', sans-serif;
+            }
+
+            &.show-error {
+
+                margin-bottom: 4px;
+                border: 2px solid red;
+
+                & + .contact-form__error {
+                    display: block;
+                    margin-bottom: 12px;
+                }
+
+            }
+            
+        }
+
+        .contact-form__error {
+            text-align: left;
+            font-size: 14px;
+            display: none;
+        }
+        
+        .contact-form__ok {
+
+            margin-top: 40px;
+            display: none;
+
+            &.show {
+                display: block;
+            }
+            
+        }
+        
+        .contact-form__button {
+            border: none;
+            background-color: #000;
+            color: #fff;
+            outline: none;
+            padding: 15px 40px;
+            text-transform: uppercase;
+            border-radius: 30px;
+            margin-top: 25px;
+            cursor: pointer;
+            transition: background-color .3s, color .3s;
+            font-weight: 600;
+        
+            &:hover {
+                background-color: #fff;
+                color: #000;
+            }
+        }
+        
+    }
+    
+}
+
+// MEDIA QUERIES.
+@media( min-width: 500px ) {
+
+    .footer {
+        .contact__subtitle { font-size: 20px; }
+    }
+    
+}
+
+@media( min-width: 769px ) {
+
+    .footer {
+
+        .contact__subtitle { 
+            font-size: 22px; 
+        }
+
+        .contact-form {
+            .contact-form__button { padding: 19px 50px; }
+        }
+        
+    }
+    
+}
+
+@media( min-width: 1200px ) {
+
+    .footer {
+
+        .contact__subtitle { 
+            font-size: 25px; 
+        }
+
+        .social-media {
+            .social-media__link {
+                @include width-and-height( 60px, 60px );
+                padding: 25px;
+                font-size: 30px;
+            }
+        }
+
+        .contact-form {
+
+            width: 80%;
+
+            .contact-form__input { 
+
+                font-size: 16px; 
+                margin-bottom: 15px;
+                
+            }
+        
+            .contact-form__error { 
+                font-size: 16px; 
+            }
+        
+            .contact-form__ok { 
+                font-size: 20px; 
+            }
+            
+        }
+        
+    }
+
+}

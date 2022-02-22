@@ -1,0 +1,69 @@
+{
+    "menu": {
+        "home": "Inicio",
+        "about-me": "Sobre mí",
+        "my-projects": "Mis trabajos",
+        "skills": "Habilidades",
+        "my-services": "¿Qué puedo ofrecer?",
+        "contact": "Contacto"
+    },
+    "circle": {
+        "title": "¡Hola!",
+        "subtitle": "Desliza hacia abajo",
+        "sliding-title": "Bienvenido/a a mi portafolio"
+    },
+    "about-me": {
+        "title": "Sobre mí",
+        "profession": "Desarrollador Frontend",
+        "description": "Comencé a estudiar desarrollo web a los 19 años en la Universidad Nacional de Quilmes. Al mismo tiempo, además, inicie cursos para especializarme en tecnologías del frontend.<br>Comencé aprendiendo las bases, y luego me enfoqué en estudiar con profundidad, frameworks de JavaScript. Actualmente me gusta desarrollar en React, utilizando TypeScript.<br><br>En los trabajos que realizo, intento aplicar siempre las mejores prácticas, para realizar así, un código mucho más limpio, prolijo y entendible.",
+        "button": "Descargar CV"
+    },
+    "my-projects": {
+        "title": "Mis trabajos",
+        "description": "En esta sección encontrarás algunos trabajos que realicé. En el buscador de abajo, se puede filrar los proyectos según las tecnologías usadas en cada uno. Para ver el repositorio de alguno, en la sección de contacto encontrarás el botón que te dirige a mi cuenta de Github.",
+        "message": "¡No hay resultados!",
+        "button": "Ver proyecto"
+    },
+    "skills": {
+        "title": "Habilidades",
+        "description": "En el 2019 comencé a estudiar tecnologías del frontend. Comencé con HTML5, CSS3 y JavaScript. Luego me capacité en Angular y actualmente trabajo con React. Cuando trabajo en proyectos con Vanilla JS, me gusta utilizar el estándar ECMAScript 6, SASS y Gulp para automatizar todas las tareas, minificar el código, etc. Cuando trabajo en proyectos con React, me gusta utilizar TypeScript.",
+        "aptitude-title": "Aptitudes",
+        "title-problem-resolution": "Resolución de problemas",
+        "description-problem-resolution": "Comencé a estudiar programación porque me daba mucha satisfacción resolver problemas informáticos de chico.",
+        "title-teamwork": "Trabajo en equipo",
+        "description-teamwork": "Me gusta aportar mi grano de arena en un grupo de trabajo, ayudando a mis compañeros y aprendiendo de ellos al mismo tiempo.",
+        "title-organization": "Organización",
+        "description-organization": "Soy una persona ordenada y organizada en todos los aspectos de mi vida. Intento siempre reflejar lo mismo en mi código.",
+        "title-time-management": "Gestión del tiempo",
+        "description-time-management": "Planifico y organizo lo mejor posible las tareas que debo realizar, para llegar a ser más eficiente y productivo."
+    },
+    "my-services": {
+        "title": "¿Qué puedo ofrecer?",
+        "description": "Con mi experiencia y conocimientos, estoy seguro de que puedo complementarme muy bien en un equipo de trabajo que le guste desarrollar proyectos variados y desafiantes. En mi día a día, me preocupo siempre por aprender cosas nuevas para brindar el mejor servicio posible. Soy una persona que disfruta mucho cuando está programando.",
+        "button": "Contactame",
+        "title-good-practices": "Buenas prácticas",
+        "description-good-practices": "Intento siempre escribir mi código utilizando las mejores prácticas, para que sea más legible y entendible.",
+        "title-responsive-design": "Diseño responsivo",
+        "description-responsive-design": "En todos mis proyectos aplico Responsive Web Design. También utilizo la metodología BEM cuando trabajo con CSS y/o SASS.",
+        "title-creativity": "Creatividad",
+        "description-creativity": "Además resolver problemas de programación, me gusta mucho diseñar la UX/UI de los proyectos, es allí cuando puedo expresar toda mi creatividad.",
+        "title-dynamism": "Dinamismo",
+        "description-dynamism": "Soy una persona que siempre está en constante movimiento, aprendiendo e indagando cosas nuevas."
+    },
+    "contact": {
+        "title": "Contacto",
+        "description": "¿Deseas enviarme un mensaje? Contáctame, responderé tu mensaje a la brevedad. Siempre estoy abierto a escuchar nuevas oportunidades y/o propuetas.",
+        "subtitle": "¡Envíame un correo!",
+        "placeholder-name": "Nombre",
+        "error-name": "Nombre inválido",
+        "placeholder-email": "Correo electrónico",
+        "error-email": "Correo inválido",
+        "placeholder-message": "Mensaje",
+        "error-message": "Mensaje inválido",
+        "message": "¡Mensaje enviado correctamente!",
+        "button": "Enviar"
+    },
+    "copyright": {
+        "text": "Hecho por Agustín Morinigo"
+    }
+}

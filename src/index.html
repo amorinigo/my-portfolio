@@ -4,12 +4,276 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="./assets/images/icons/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/styles.min.css">
-        <title>Basic project with GULP</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+        <!-- Swiper's CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+        <title>Agustín Morinigo - Portfolio</title>
     </head>
     <body>
-        <!-- Hi, I'm a comment. Comments are not uploaded in dist/ -->
-        <p class="paragraph">Hello World!</p>
+        
+        <header class="navbar">
+
+            <nav class="nav">
+    
+                <span class="nav__section" style="--i:0;" ></span>
+                <span class="nav__section" style="--i:1;" ></span>
+                <span class="nav__section" style="--i:2;" ></span>
+                <span class="nav__section" style="--i:3;" ></span>
+    
+                <ul class="menu">
+    
+                    <li class="menu__item">
+                        <a href="#" class="menu__link" data-section="menu" data-value="home"></a>
+                    </li>
+    
+                    <li class="menu__item">
+                        <a href="#aboutMe" class="menu__link" data-section="menu" data-value="about-me"></a>
+                    </li>
+    
+                    <li class="menu__item">
+                        <a href="#myProjects" class="menu__link" data-section="menu" data-value="my-projects"></a>
+                    </li>
+    
+                    <li class="menu__item">
+                        <a href="#skills" class="menu__link" data-section="menu" data-value="skills"></a>
+                    </li>
+    
+                    <li class="menu__item">
+                        <a href="#myServices" class="menu__link" data-section="menu" data-value="my-services"></a>
+                    </li>
+    
+                    <li class="menu__item">
+                        <a href="#contact" class="menu__link" data-section="menu" data-value="contact"></a>
+                    </li>
+
+                </ul>
+    
+            </nav>
+
+            <div class="buttons">
+
+                <button type="button" class="language-button" data-language="es">
+
+                    <span class="front">
+                        <img src="./assets/images/languages/spanish-language.png" alt="idioma en español" class="spanish-language">
+                    </span>
+
+                    <span class="back">
+                        <img src="./assets/images/languages/english-language.png" alt="idioma en inglés" class="english-language">
+                    </span>
+
+                </button>
+                
+                <button type="button" class="menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+            </div>
+    
+        </header>
+        
+        <div class="circle">
+
+            <div class="welcome-info">
+                <h2 data-section="circle" data-value="title"></h2>
+                <h3 data-section="circle" data-value="subtitle"></h3>
+                <i class="fas fa-arrow-down"></i>
+            </div>
+            
+            <div class="circle-figure" id="circleFigure">
+                <h2 class="circle-title" data-section="circle" data-value="sliding-title"></h2>
+            </div>
+
+        </div>
+    
+        <main class="main">
+    
+            <section class="about-me">
+    
+                <h2 class="title title--about-me" id="aboutMe" data-section="about-me" data-value="title"></h2>
+    
+                <div class="about-me__content">
+
+                    <figure class="about-me__figure">
+                        <img src="./assets/images/about-me/dev.png" alt="about me" class="about-me__img">
+                    </figure>
+    
+                    <div class="about-me__text">
+
+                        <h2 class="about-me__name">Agustín Morinigo</h2>
+                        <h3 class="about-me__profession" data-section="about-me" data-value="profession"></h3>
+                        <p class="about-me__description" data-section="about-me" data-value="description"></p>
+    
+                        <a  
+                            href="./assets/docs/CV-Agustín-Morinigo.pdf" 
+                            target="_blank"
+                            class="button button--about-me"
+                            data-section="about-me" data-value="button"
+                        ></a>
+
+                    </div>
+
+                </div>
+    
+            </section>
+    
+            <section class="my-projects">
+
+                <h2 class="title" id="myProjects" data-section="my-projects" data-value="title"></h2>
+    
+                <p class="description description--projects" data-section="my-projects" data-value="description">
+                </p>
+
+                <div class="projects-filter">
+                    <input type="text" placeholder="Angular, Sass, html" />
+                    <p class="empty-message description" data-section="my-projects" data-value="message"></p>
+                </div>
+    
+                <div class="my-projects__cards"></div>
+
+            </section>
+    
+            <section class="skills">
+    
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#3C2A96" fill-opacity="1" d="M0,288L48,282.7C96,277,192,267,288,234.7C384,203,480,149,576,149.3C672,149,768,203,864,202.7C960,203,1056,149,1152,117.3C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                </svg>
+    
+                <div class="skills__ctn">
+
+                    <h2 class="title" id="skills" data-section="skills" data-value="title"></h2>
+                    <p class="description description--skills" data-section="skills" data-value="description"></p>
+    
+                    <div class="skills-slider">
+                        
+                        <div class="swiper-container">
+    
+                            <!-- SLIDER CONTENT -->
+                            <div class="swiper-wrapper"></div>
+                            
+                            <!-- SLIDER BUTTONS -->
+                            <div class="button-prev"><i class="fas fa-chevron-left"></i></div>
+                            <div class="button-next"><i class="fas fa-chevron-right"></i></div>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="skills-cards">
+
+                        <h2 class="title title--competencies" data-section="skills" data-value="aptitude-title">
+                        </h2>
+                        
+                        <div class="skills-cards__grid grid"></div>
+
+                    </div>
+                    
+                </div>
+    
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#3C2A96" fill-opacity="1" d="M0,256L48,234.7C96,213,192,171,288,170.7C384,171,480,213,576,202.7C672,192,768,128,864,133.3C960,139,1056,213,1152,218.7C1248,224,1344,160,1392,128L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                    </path>
+                </svg>
+    
+            </section>
+    
+            <section class="my-services">
+    
+                <h2 class="title" id="myServices" data-section="my-services" data-value="title"></h2>
+    
+                <div class="my-services__text">
+                    <p 
+                        class="description description--services" 
+                        data-section="my-services" 
+                        data-value="description"
+                    >
+                    </p>
+        
+                    <a 
+                        href="#contact" 
+                        class="button button--services" 
+                        data-section="my-services" 
+                        data-value="button"
+                    >
+                    </a>
+                </div>
+    
+                <div class="my-services__grid grid"></div>
+    
+            </section>
+    
+        </main>
+    
+        <a href="#" class="roundButton roundButton--bottom">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    
+        <footer class="footer">
+            
+            <h2 class="title title--contact" id="contact" data-section="contact" data-value="title"></h2>
+    
+            <p class="description description--contact" data-section="contact" data-value="description"></p>
+    
+            <h4 class="contact__subtitle" data-section="contact" data-value="subtitle"></h4>
+    
+            <form class="contact-form" novalidate autocomplete="off">
+
+                <input id="name" class="contact-form__input" type="text" data-section="contact" data-value="placeholder-name">
+
+                <p class="contact-form__error" data-section="contact" data-value="error-name"></p>
+    
+                <input id="email" class="contact-form__input" type="text" data-section="contact" data-value="placeholder-email">
+
+                <p class="contact-form__error" data-section="contact" data-value="error-email"></p>
+    
+                <textarea id="message" class="contact-form__input textarea" data-section="contact" data-value="placeholder-message"></textarea>
+
+                <p class="contact-form__error" data-section="contact" data-value="error-message"></p>
+    
+                <p class="contact-form__ok" data-section="contact" data-value="message"></p>
+
+                <button class="contact-form__button" type="submit" data-section="contact" data-value="button">
+                </button>
+
+            </form>
+    
+            <div class="social-media">
+    
+                <a href="https://www.linkedin.com/in/amorinigo" target="_blank" class="social-media__link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+    
+                <a href="https://github.com/amorinigo" target="_blank" class="social-media__link">
+                    <i class="fab fa-github"></i>
+                </a>
+    
+                <a href="https://api.whatsapp.com/send?phone=541138965161" target="_blank" class="social-media__link">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+    
+            </div>
+    
+            <p class="copyright">
+                <span data-section="copyright" data-value="text"></span>
+                <span class="year"></span>
+            </p>
+    
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script type="module" src="js/index.min.js"></script>
+
     </body>
 </html>

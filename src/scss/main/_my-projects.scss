@@ -1,0 +1,222 @@
+.my-projects {
+
+    width: 100%;
+    margin-top: 400px;
+
+    .projects-filter {
+
+        margin-bottom: 40px !important;
+    
+        input {
+            display: block;
+            width: 100%;
+    
+            background: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            display: block;
+            font-size: 15px;
+            margin-bottom: 10px;
+            outline: none;
+            padding: 20px 15px;
+            margin: 0;
+        }
+    
+        .empty-message {
+            text-align: center;
+            margin-top: 30px;
+            width: 100%;
+            display: none;
+
+            &.show-message {
+                display: block;
+            }
+        }
+        
+    }
+    
+    .projects-filter,
+    .my-projects__cards {
+        margin: 0 20px;
+    }
+
+    .my-projects__cards {
+
+        .project-card {
+
+            height: 500px;
+            border-radius: 8px;
+            @include display-flex( center, center, column );
+            overflow: hidden;
+            margin-bottom: 30px;
+            position: relative;
+        
+            &.hide {
+                display: none;
+            }
+        
+            .project-card__figure,
+            .project-card__content {
+                @include width-and-height();
+            }
+        
+            .project-card__figure {
+        
+                @include display-flex( center, center, row );
+        
+                .project-card__img {
+        
+                    height: 100px;
+                    object-fit: cover;
+                    animation : image 2s ease-in-out infinite alternate;
+                
+                    @keyframes image {
+                        from { transform: translateY(-15px); }
+                        to { transform: translateY(15px); }
+                    }
+                    
+                }
+        
+            }
+        
+            .project-card__content {
+        
+                @include display-flex( center, space-evenly, column);
+                background-color: white;
+                text-align: center;
+                color: #000;
+        
+                .project-card__name {
+                    font-size: 23px;
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    padding: 0 20px;
+                }
+                
+                .project-card__technologies { 
+                    
+                    text-align: left; 
+                    font-size: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 40%;
+                    gap: 5px 4px;
+                    justify-content: center;
+                
+                    .project-card__technology {
+                
+                        font-size: 16px;
+                        color: var(--grey-color);
+                    
+                        &::after {
+                            display: inline-block;
+                            content: ',';
+                            margin-left: 1px;
+                        }
+                    
+                        &:last-child { 
+                            &::after { display: none; }
+                        }
+                        
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}
+
+// MEDIA QUERIES.
+@media( min-width: 330px ) { 
+
+    .my-projects .my-projects__cards .project-card .project-card__figure .project-card__img {
+        height: 120px;
+    }
+    
+}
+
+@media( min-width: 400px ) { 
+
+    .my-projects .my-projects__cards .project-card .project-card__figure .project-card__img {
+        height: 140px;
+    }
+    
+}
+
+@media( min-width: 500px ) { 
+
+    .my-projects .my-projects__cards .project-card .project-card__figure .project-card__img {
+        height: 160px;
+    }
+    
+}
+
+@media( min-width: 769px ) {
+
+    .my-projects .my-projects__cards .project-card {
+
+        margin-bottom: 60px;
+        flex-direction: row; 
+        &:nth-child(2n) { flex-direction: row-reverse; }
+
+        .project-card__content {
+
+            .project-card__name { 
+                font-size: 30px; 
+            }
+        
+            .project-card__technologies .project-card__technology { 
+                font-size: 18px; 
+            }
+            
+        }
+        
+    }
+
+}
+
+@media( min-width: 900px ) { 
+
+    .my-projects {
+        .projects-filter, .my-projects__cards { margin: 0 40px; } 
+    }
+
+}
+
+@media( min-width: 1100px ) { 
+
+    .my-projects {
+
+        .projects-filter, .my-projects__cards { margin: 0 60px; }
+
+        .my-projects__cards .project-card {
+
+            margin-bottom: 80px;
+
+            .project-card__figure .project-card__img { height: 220px; }
+
+            .project-card__content {
+                .project-card__name { font-size: 40px; }
+                .project-card__technologies .project-card__technology { font-size: 20px; }
+            }
+            
+        }
+        
+    }
+
+}
+
+@media( min-width: 1200px ) { 
+
+    .my-projects {
+
+        .projects-filter, .my-projects__cards { margin: 0 100px; }
+        .my-projects__cards .project-card .project-card__content .project-card__name { font-size: 45px; }
+        
+    }
+
+}

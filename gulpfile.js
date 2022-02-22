@@ -84,28 +84,20 @@ task( 'js', done => {
 	done();
 } );
 
+task( 'assets', () => {
+
+	return src( './src/assets/**/*' )
+		.pipe( plumber() )
+		.pipe( dest( './dist/assets' ) );
+
+} );
+
 // Run 'gulp clean' when changes are to be pushed to production.
 task( 'clean', () => {
     return src( './dist/css/styles.min.css' )
 		.pipe( plumber() )
 		.pipe( clean({ content: ['./dist/*.html'] }) )
 		.pipe( dest('./dist/css') );
-} );
-
-task( 'images', () => {
-
-	return src( './src/assets/images/**/*.{jpg,jpeg,png,svg,gif,ico,webp}' )
-		.pipe( plumber() )
-		.pipe( dest( './dist/assets/' ) );
-
-} );
-
-task( 'fonts', () => {
-
-	return src( './src/assets/fonts/*' )
-		.pipe( plumber() )
-		.pipe( dest( './dist/assets/fonts/' ) );
-
 } );
 
 const reload = done => {
@@ -119,8 +111,7 @@ task( 'default', () => {
 	watch( './src/*.html',          series('html',   reload) );
 	watch( './src/scss/**/*.scss',  series('sass',   reload) );
 	watch( './src/js/*.js',         series('js',     reload) );
-	watch( './src/assets/images/*', series('images', reload) );
-	watch( './src/assets/fonts/*',  series('fonts',  reload) );
+	watch( './src/assets/**/*',     series('assets', reload) );
 	src( './dist/js/index.min.js' );
 
 } );

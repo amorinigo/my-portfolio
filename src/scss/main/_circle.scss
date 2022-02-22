@@ -1,0 +1,136 @@
+.circle {
+
+    .welcome-info {
+
+        @include position-top-left( absolute, 50%, 50% );
+        transform: translate( -50%, -50% );
+        margin-top: -100px;
+        font-size: 25px;
+        text-align: center;
+        overflow: hidden;
+        padding-bottom: 20px;
+        width: 100%;
+        h3 { margin: 10px 0; }
+
+        h2 {
+            animation : scale 2s ease-in infinite alternate;
+            text-transform: uppercase;
+        }
+
+        @keyframes scale {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+
+        .fa-arrow-down {
+            animation : arrow 1s ease-in-out infinite alternate;
+            font-size: 30px;
+        }
+        
+        @keyframes arrow {
+            from { transform: translateY(0); }
+            to { transform: translateY(10px); }
+        }
+        
+    }
+    
+    .circle-figure {
+
+        @include position-top-left( fixed, 0, 0 );
+        @include width-and-height( 100%, 100vh );
+        @include display-flex();
+        background: var(--circle-bg);
+        clip-path: circle( 0 at 50% 60% );
+        z-index: -1;
+
+        .circle-title {
+            @include position-top-left( fixed, 55%, 100% );
+            margin-left: 100px;
+            transform: translateY( -50% );
+            white-space: nowrap;
+            z-index: 1;
+            font-size: 80px;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            text-transform: uppercase;
+        }
+        
+    }
+    
+}
+
+.main {
+    position: relative;
+    margin-top: 480vh;
+}
+
+// MEDIA QUERIES.
+@media( min-width: 370px ) { 
+    .main{ margin-top: 460vh; } 
+}
+
+@media( min-width: 400px ) { 
+    .circle .circle-figure .circle-title { margin-left: 200px; } 
+}
+
+@media( min-width: 480px ) { 
+    .main{ margin-top: 440vh; } 
+}
+
+@media( min-width: 520px ) { 
+    .main{ margin-top: 420vh; } 
+}
+
+@media( min-width: 670px ) {
+
+    .circle {
+
+        .welcome-info { 
+            font-size: 45px; 
+            .fa-arrow-down { font-size: 50px; }
+        }
+
+        .circle-figure .circle-title { 
+            font-size: 150px; 
+            margin-left: 800px;
+        } 
+        
+    }
+
+    .main{ margin-top: 510vh; }
+
+}
+
+@media( min-width: 769px )  { 
+    .main{ margin-top: 480vh; } 
+}
+
+@media( min-width: 910px )  { 
+    .main{ margin-top: 460vh; } 
+}
+
+@media( min-width: 1000px ) { 
+    .main{ margin-top: 400vh; } 
+}
+
+@media( min-width: 1100px ) {
+
+    .circle {
+
+        .circle-figure .circle-title { font-size: 200px; } 
+        
+        .welcome-info { 
+            font-size: 60px; 
+            .fa-arrow-down { font-size: 60px; }
+        }
+        
+    }
+
+    .main{ margin-top: 460vh; }
+
+}
+
+@media( min-width: 1200px ) { 
+    .main{ margin-top: 420vh; } 
+}
