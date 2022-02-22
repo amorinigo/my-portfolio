@@ -1,0 +1,69 @@
+{
+    "menu": {
+        "home": "Home",
+        "about-me": "About me",
+        "my-projects": "My projects",
+        "skills": "Skills",
+        "my-services": "What can i offer?",
+        "contact": "Contact"
+    },
+    "circle": {
+        "title": "¡Hello!",
+        "subtitle": "slide down",
+        "sliding-title": "Welcome to my portfolio"
+    },
+    "about-me": {
+        "title": "About me",
+        "profession": "Frontend developer",
+        "description": "I started studying web development at the age of 19 at the National University of Quilmes. At the same time, I also started courses to specialize in frontend technologies.<br>I started learning the basics, and then I focused on studying JavaScript frameworks in depth. Currently I like to develop in React, using TypeScript.<br><br>In the work I do, I always try to apply the best practices, in order to create a much cleaner, neater and more understandable code.",
+        "button": "Download CV"
+    },
+    "my-projects": {
+        "title": "My projects",
+        "description": "In this section you will find some work I did. In the search engine below, you can filter the projects according to the technologies used in each one.To see the repository of one, in the contact section you will find the button that directs you to my Github account.",
+        "message": "No results!",
+        "button": "Go to project"
+    },
+    "skills": {
+        "title": "Skills",
+        "description": "In 2019 I started studying frontend technologies. I started with HTML5, CSS3 and JavaScript. Then I trained in Angular and currently I work with React. When working on projects with Vanilla JS, I like to use the ECMAScript 6 standard, SASS, and Gulp to automate all the tasks, minify the code, etc. When working on React projects, I like to use TypeScript.",
+        "aptitude-title": "Other skills",
+        "title-problem-resolution": "Problem resolution",
+        "description-problem-resolution": "I started studying programming because it gave me a lot of satisfaction to solve computer problems as a child.",
+        "title-teamwork": "Teamwork",
+        "description-teamwork": "I like to contribute my grain of sand in a work group, helping my colleagues and learning from them at the same time.",
+        "title-organization": "Organization",
+        "description-organization": "I am a neat and organized person in all aspects of my life. I always try to reflect the same thing in my code.",
+        "title-time-management": "Time management",
+        "description-time-management": "I plan and organize the tasks I have to perform as well as possible, in order to become more efficient and productive."
+    },
+    "my-services": {
+        "title": "What can I offer?",
+        "description": "With my experience and knowledge, I am sure that I can complement myself very well in a work team that likes to develop varied and challenging projects. In my day to day, I always worry about learning new things to provide the best possible service. I am a person who really enjoys programming.",
+        "button": "Contact me",
+        "title-good-practices": "Good practices",
+        "description-good-practices": "I always try to write my code using best practices, to make it more readable and understandable.",
+        "title-responsive-design": "Responsive design",
+        "description-responsive-design": "In all my projects I apply Responsive Web Design. I also use the BEM methodology when working with CSS and/or SASS.",
+        "title-creativity": "Creativity",
+        "description-creativity": "In addition to solving programming problems, I really like designing the UX/UI of projects, that's when I can express all my creativity.",
+        "title-dynamism": "Dynamism",
+        "description-dynamism": "I am a person who is always in constant movement, learning and investigating new things."
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "Do you want to send me a message? Contact me, I will answer your message as soon as possible. I am always open to hearing new opportunities and/or proposals.",
+        "subtitle": "Send me an email!",
+        "placeholder-name": "Name",
+        "error-name": "Invalid name",
+        "placeholder-email": "Email",
+        "error-email": "Invalid email",
+        "placeholder-message": "Message",
+        "error-message": "Invalid message",
+        "message": "Message sent successfully!",
+        "button": "Send"
+    },
+    "copyright": {
+        "text": "Developed by Agustin Morinigo"
+    }
+}
