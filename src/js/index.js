@@ -103,7 +103,7 @@ const handleCircle = () => {
     const circle       = document.querySelector( '.circle-figure' );
     const circleTitle  = document.querySelector( '.circle-title' );
     
-    window.addEventListener( 'scroll', () => {
+    document.addEventListener( 'scroll', () => {
         const value = window.scrollY;
         circle.style.clipPath = `circle( ${ value }px at 50% 60% )`;
         circleTitle.style.left = `${ 100 - value / 5 }%`;

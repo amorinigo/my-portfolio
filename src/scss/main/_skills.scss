@@ -13,7 +13,8 @@
 
             .swiper-container {
 
-                @include width-and-height( 100%, 300px ); 
+                @include width-and-height( 100%, 300px );
+                overflow: hidden;
                 position: relative;
             
                 .swiper-wrapper {

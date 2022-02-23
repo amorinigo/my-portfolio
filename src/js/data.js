@@ -73,14 +73,14 @@ export const projectsInfo = [
         name: 'GYM Fitness Studio',
         img: `${ projectsImgUrl }/gym.svg`,
         technologies: [ 'JavaScript ES6', 'SASS', 'CSS', 'HTML' ],
-        link: `${ githubUrl }/gym/`,
+        link: `${ githubUrl }/gym-fitness-studio/`,
         cardColor: '#7D3C98'
     },
     {
         name: 'Portafolio',
         img: `${ projectsImgUrl }/portafolio.svg`,
         technologies: [ 'JavaScript ES6', 'SASS', 'CSS', 'HTML' ],
-        link: `${ githubUrl }/portfolio/`,
+        link: `${ githubUrl }/my-portfolio/`,
         cardColor: '#AF0DA7'
     }
 ];
