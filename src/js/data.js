@@ -1,7 +1,7 @@
-const sliderImgUrl   = '/assets/images/skills/slider';
-const skillsImgUrl   = '/assets/images/skills/cards';
-const projectsImgUrl = '/assets/images/projects';
-const servicesImgIrl = '/assets/images/services';
+const sliderImgUrl   = `${ location.href }/assets/images/skills/slider`;
+const skillsImgUrl   = `${ location.href }/assets/images/skills/cards`;
+const projectsImgUrl = `${ location.href }/assets/images/projects`;
+const servicesImgIrl = `${ location.href }/assets/images/services`;
 const githubUrl      = 'https://amorinigo.github.io';
 
 export const particleConfig = {
