@@ -66,7 +66,7 @@ const handleLanguageButton = () => {
 
     const changeLanguage = language => {
 
-        fetch( `/assets/languages/${ language }.json` )
+        fetch( `${ location.href }/assets/languages/${ language }.json` )
             .then( resp => resp.json() )
             .then( texts => changeTexts( texts ) );
 
