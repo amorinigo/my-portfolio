@@ -14,8 +14,8 @@
     },
     "about-me": {
         "title": "Sobre mí",
-        "profession": "Desarrollador Frontend",
-        "description": "Comencé a estudiar desarrollo web a los 19 años en la Universidad Nacional de Quilmes. Al mismo tiempo, además, inicie cursos para especializarme en tecnologías del frontend.<br>Comencé aprendiendo las bases, y luego me enfoqué en estudiar con profundidad, frameworks de JavaScript. Actualmente me gusta desarrollar en React, utilizando TypeScript.<br><br>En los trabajos que realizo, intento aplicar siempre las mejores prácticas, para realizar así, un código mucho más limpio, prolijo y entendible.",
+        "profession": "Desarrollador Frontend Ssr",
+        "description": "Comencé a estudiar desarrollo web a los 19 años en la Universidad Nacional de Quilmes. Al mismo tiempo, además, inicie cursos para especializarme en tecnologías del frontend.<br>Comencé aprendiendo las bases, y luego me enfoqué en estudiar con profundidad, frameworks de JavaScript. Actualmente trabajo con TailwindCSS, ReactJS, TypeScript, Jest, Redux Toolkit y RKT Query.<br><br>En mis desarrollos, intento aplicar siempre las mejores prácticas, para realizar así, un código mucho más prolijo y mantenible.",
         "button": "Descargar CV"
     },
     "my-projects": {

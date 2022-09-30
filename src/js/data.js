@@ -38,6 +38,8 @@ export const technologiesInfo = [
     //{ name: 'GraphQL',      img: `${ sliderImgUrl }/graph-ql.svg`     },
     //{ name: 'NextJS',       img: `${ sliderImgUrl }/next-js.svg`      },
     //{ name: 'Gatsby',       img: `${ sliderImgUrl }/gatsby.svg`       },
+    { name: 'JEST',         img: `${ sliderImgUrl }/jest.svg`        },
+    { name: 'ViteJS',       img: `${ sliderImgUrl }/vite.svg`        },
     { name: 'Redux',        img: `${ sliderImgUrl }/redux.svg`        },
     { name: 'React',        img: `${ sliderImgUrl }/react.svg`        },
     { name: 'ReactiveX',    img: `${ sliderImgUrl }/rxjs.svg`         },
@@ -52,7 +54,7 @@ export const technologiesInfo = [
     { name: 'Bootstrap',    img: `${ sliderImgUrl }/bootstrap.svg`    },
     { name: 'SASS',         img: `${ sliderImgUrl }/sass.svg`         },
     { name: 'CSS 3',        img: `${ sliderImgUrl }/css3.svg`         },
-    { name: 'HTML 5',       img: `${ sliderImgUrl }/html5.svg`        }
+    { name: 'HTML 5',       img: `${ sliderImgUrl }/html5.svg`        },
 ];
 
 export const skillsInfo = [
